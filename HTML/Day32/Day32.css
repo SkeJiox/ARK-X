@@ -1,0 +1,81 @@
+/* CSS SELECTORS   */
+/* Element Selector: Styles all paragraphs (p) */
+p {
+  color: blue;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+/* Class Selector: Styles all elements with the class "highlight" */
+.highlight {
+  background-color: yellow;
+  padding: 10px;
+  border: 1px solid black;
+}
+/* ID Selector: Styles the element with the ID "header" */
+#header {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* CHILD AND SIBLING SELECTORS */
+/* Child Selector: Styles all paragraphs (p) inside a div element with the class "container" */
+.container > p {
+  color: blue;
+  font-family: Arial, sans-serif;
+}
+/* Adjacent Sibling Selector: Styles all headings (h2) that immediately follow an h1 heading */
+h1 + h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* General Sibling Selector: Styles all paragraphs (p) that come after a div element with the class "highlight" */
+.highlight ~ p {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+/* Descendant Selector (space)
+Targets all specified elements that are descendants of a specified element, regardless of depth. */
+
+.container p {
+  color: green;
+}
+
+/*Pseudo CLASS */
+/* Pseudo-Class: Changes the color of links when hovered over */
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+/* Pseudo-Class: Indicates a selected button with a different background color */
+button:active {
+  background-color: #007bff;
+  color: white;
+}
+/* Pseudo-Class: Changes the border color of input fields when focused */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.8);
+}
+
+/*Pseudo ELEMENT*/
+/* Pseudo-Element: Creates a drop cap for the first letter of paragraphs */
+p::first-letter {
+  font-size: 24px;
+  font-style: italic;
+  float: left;
+}
+/* Pseudo-Element: Adds a subtle shadow around images */
+img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
